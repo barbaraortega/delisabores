@@ -34,13 +34,19 @@ ul {
     color: rgb(226, 151, 126);
     text-decoration: none;
     font-size: 25px;
+   /*  transition : transform all 5s; */
 }
+
 
 .encabezadoMenu {
     display: inline-block;
     margin: 20px;
 }
 
+.encabezadoMenu:hover {
+    transform: scale(2);
+    transition : transform all 2s;
+}
 .menu {
     margin: auto;
     width: fit-content;
