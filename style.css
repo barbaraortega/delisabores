@@ -1,14 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     height: 100%;
 }
-    
-/* titulo */
 
-h1{
+/* titulo */
+h1 {
     color: rgb(255, 42, 148);
     margin: auto;
     width: fit-content;
@@ -18,265 +18,239 @@ h1{
 }
 
 /* nav */
-nav{
+nav {
     background-color: rgb(248, 234, 220);
-   
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-.logo{
- 
-    margin: auto;
-    padding-left: 70px;
+ul {
+    display: flex;
+    list-style: none;
 }
 
 .navegacion ul li a {
-
     color: rgb(226, 151, 126);
     text-decoration: none;
-    font-size: 20px;
-    
+    font-size: 25px;
 }
-.encabezadoMenu{
 
+.encabezadoMenu {
     display: inline-block;
     margin: 20px;
 }
-.menu{
+
+.menu {
     margin: auto;
     width: fit-content;
 }
 
 /* body */
-body{
+/* layout con grid */
+body {
     background-image: url(../deli-sabores/imagenes/sobrero\ de\ cocina.webp);
     background-size: cover;
     margin: 0;
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 150px 200px  1fr 100px;
-    grid-template-areas: 
-    "encabezado"
-    "logo"
-    "principal"
-    "pie";
+    grid-template-rows: 300px 200px 1fr 100px;
+    grid-template-areas:
+        "encabezado"
+        "logo"
+        "principal"
+        "pie";
 }
-.descripcion{
+
+.descripcion {
     font-family: Gentium Plus;
     background-color: rgb(223, 252, 252);
     text-align: center;
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 30px;
-    
+    font-size: 20px;
 }
 
-header{
+header {
     height: 150px;
-  
     grid-area: encabezado;
 }
- main{
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    grid-area: logo;
+}
+
+main {
     background-color: rgb(223, 252, 252);
     font-family: 'Comfortaa', cursive;
     font-family: 'Cormorant Garamond', serif;
     font-family: 'Gentium Plus', serif;
     grid-area: principal;
 }
-p{
-    margin: 0;
-}
- 
 
- /* maquinas */
- h2{
+/* receta */
+h2 {
     margin: auto;
     padding: auto;
     width: fit-content;
-    font-weight: 600;
-    font-size: 40px;
-      
-    }
-    h3{
-        margin: auto;
-        padding: auto;
-        width: fit-content;
-        font-weight: 400;
-        font-size: 30px;
-            
-    }
-    
-    h4{
+    font-weight: 80;
+    font-size: 45px;
+}
+
+h3 {
     margin: auto;
     padding: auto;
     width: fit-content;
     font-weight: 200;
+    font-size: 30px;
+}
+
+h4 {
+    margin-left: 30px;
+    font-weight: 200;
     font-size: 20px;
     text-decoration: none;
-    }
-    
-    .imagenResaltada{
-        margin: auto;
-        display: block;
-        border: solid 4px  rgb(197, 147, 197);
-    }
-    .ingredienteFinal{
-        text-align: center;
-        list-style: circle;
-     
-    }
-  
-    /* contacto */
+}
+
+.grillaReceta {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 180px 50px 50px 50px;
+    justify-content: center;
+}
+
+.ingredienteFinal {
+    border: solid 1px rgb(226, 151, 126);
+    border-radius: 5px;
+    background-color: rgb(184, 238, 220);
+}
+
+.foto {
+    width: auto;
+    height: auto;
+    grid-column: 1/3;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+/* maquinas */
+
+
+/* quien soy */
+.imagenResaltada {
+    margin: auto;
+    display: block;
+    border: solid 4px rgb(197, 147, 197);
+}
+
 .formulario{
-    border: solid 2px coral;
-    width: fit-content;
-    margin-left: 570px;
-    padding: 10px;
-    flex-direction: column;
+    width: 50%;
+    height: 45%;
+    margin: auto;
+    background-color: rgba(0,0,0,0.3);
+    padding: 10px 10px;
+    margin-top: 20px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.textoFormulario{
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    height: 20px;
+    border: none;
+    text-align: center;
+}
+
+input{
+    height: 40px;
+    size: 50px;
+    text-align: center;
+}
+
+.botones{
+    display: flex;
     justify-content: center;
     align-content: center;
-
+ 
 }
-.zonaConcepcion{
+.boton{
+    background-color: palevioletred;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    align-content: center;
+}
+
+.zonaConcepcion {
     display: flex;
     justify-content: center;
     align-content: center;
     margin: 20px;
     padding: 20px;
-
 }
 
-
 /* footer */
-
-footer{
+footer {
     height: 100px;
     grid-area: pie;
 }
 
-.contenedor{
+.contenedor {
     display: grid;
     grid-template-columns: 200px 100px;
-    grid-template-rows: repeat(3,40px);
+    grid-template-rows: repeat(3, 40px);
     justify-content: start;
     margin: 10px;
     margin-top: 20px;
     background-color: rgb(245, 238, 229);
-    /* grid-template-areas:
-    "cocinaChilena bandera" 
-    "alvaro"
-    "silvana" */
-    
 }
 
-.cocinaChilena{
-   /*  height: 200px;
-    width: 200px;
-    /* background-color: brown;
-    border-style: solid;
-    border-color: chocolate;
-    border-width: 3px; */
-    /* border: solid chocolate 3px; */
-/*     display: flex; */
+.cocinaChilena {
     justify-content: center;
     align-items: star;
-    font-size: 1rem; 
+    font-size: 15px;
     color: rgb(190, 75, 94);
-    /* */ 
-   /*  border-radius: 20px; */
- /*   grid-area: cocinaChilena */
 }
 
-.bandera{
-   align-items: center;
-   height: fit-content;
-   margin-left: 15px;
-   justify-content: center;
- 
+.bandera {
+    align-items: center;
+    height: fit-content;
+    margin-left: 20px;
+    justify-content: center;
 }
 
-.cocinaAlvaro{
+.cocinaAlvaro {
     grid-column: 1/3;
     align-items: center;
 }
 
-.cocinaSilvana{
+.cocinaSilvana {
     grid-column: 1/3;
 }
-/* 
-.bandera{
-    grid-area: bandera;
-}
-.alvaro{
-    grid-area: alvaro;
-}
-.silvana{
-    grid-area: silvana;
-}
- */
 
-/* h5{
-    color: rgb(126, 25, 104);
-    margin: 0px;
-    padding: 20px; 
-    /* text-decoration: overline; */
-  /*   text-decoration-color: blueviolet;
-    font-weight: 50;
-    font-size: 15px; */
-/*  */ 
-
-/* .cocinaChilena_item li a{
-    text-decoration: none;
-}
-
-.cocinaChilena ul li a{
-    margin-left: 30px;
-    text-decoration: none;
-   
-}
-.cocinaChilena{
-    margin: 10px; */
-
-
-/* 
-.chilena{
-   display: flex;
-    justify-content: start;
-    align-content: center; 
-    border: solid 1px black;
-    margin: 10px;
-;
-
-} */
-
-/* .grillaCocina{
-    display: grid;
-    grid-template-columns:200px 100px ;
-    grid-template-rows: 100px 100px;
-    border: solid 1px black;
-    justify-content: start;
-    align-content: center;
-    width: fit-content;
-    margin: 10px;
-} */
-
-
-
-
-.piePagina_item,a{
+.piePagina_item,
+a {
     color: rgb(235, 59, 97);
     display: inline-block;
     margin: 5px;
-    
-
 }
 
-.piePagina{
+.piePagina {
     margin-left: 1100px;
     padding: auto;
     width: 100;
-
-    /* border: solid 2px rgb(197, 147, 197); */
     border-radius: 6px;
     display: flex;
     justify-content: center;
@@ -284,46 +258,100 @@ footer{
 }
 
 
-/* grid probando */
 
+@media screen and (max-width: 360px) {
 
-/* html{
-    height: 100%;
-}
-body{
-    margin: 0;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 150px 200px  1fr 100px;
-    grid-template-areas: 
-    "encabezado"
-    "logo"
-    "principal"
-    "pie";
-}
-header{
-    height: 150px;
-  
-    grid-area: encabezado;
-}
-main{
-    grid-area: principal;
-}
-p{
-    margin: 0;
-}
-footer{
-
-
-    height: 100px;
-  
-    grid-area: pie;
-
-}
-
-
-
+    body{
+        background-color: aquamarine;
+    }
     
+    .navegacion ul li a {
+        font-size: 40px;
+    }
 
- */
+    .menu {
+        margin: auto;
+        width: max-content;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: repeat(2, 100px);
+        justify-content: start;
+        margin: 10px;
+        margin-top: 20px;
+        background-color: rgb(245, 238, 229);
+        grid-auto-flow: dense;
+    }
+
+    .descripcion {
+        font-size: 40px;
+        text-align: justify;
+    }
+/* receta pan */
+    .grillaReceta {
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 250px 100px 100px 100px;
+        justify-content: center;
+    }
+
+    .ingredienteFinal {
+        font-size: 30px;
+    }
+/* footer */
+    .contenedor {
+        grid-template-columns: 500px 100px;
+        grid-template-rows: repeat(3, 100px);
+        grid-auto-flow: dense;
+    }
+
+    .cocinaChilena {
+        font-size: 40px;
+    }
+
+    .bandera {
+        align-items: center;
+        height: 50px;
+        width: 50px;
+    }
+
+    .cocinaAlvaro {
+        font-size: 40px;
+    }
+
+    .cocinaSilvana {
+        font-size: 40px;
+    }
+
+   /* contacto */
+    .zonaConcepcion {
+        flex-direction: column;
+        font-size: 50px;
+        text-align: justify;
+    }
+
+    h3 {
+        font-size: 20vw;
+        margin-top: 20px;
+    }
+    h4{
+        font-size: 35px;
+    }
+    
+    .formulario{
+        width: 80%;
+        height: auto;
+        object-position: right;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+ input{
+    font-size: 25px;
+    height: 40px;
+    size: 20px;
+    text-align: center;
+ }
+  
+}
