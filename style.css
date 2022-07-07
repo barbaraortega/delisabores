@@ -34,9 +34,7 @@ ul {
     color: rgb(226, 151, 126);
     text-decoration: none;
     font-size: 25px;
-   /*  transition : transform all 5s; */
 }
-
 
 .encabezadoMenu {
     display: inline-block;
@@ -47,6 +45,8 @@ ul {
     transform: scale(2);
     transition : transform all 2s;
 }
+
+
 .menu {
     margin: auto;
     width: fit-content;
@@ -128,7 +128,7 @@ h4 {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 300px 300px;
-    grid-template-rows: 180px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px;
     justify-content: center;
 }
 
@@ -139,11 +139,32 @@ h4 {
 }
 
 .foto {
-    width: auto;
-    height: auto;
-    grid-column: 1/3;
+    width: 40%;
+    height: 300px;
+    margin: 15px auto;
+    border: solid 3px rgb(226, 151, 126);
     border-radius: 5px;
-    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: amasado 15s infinite ;
+}
+@keyframes amasado{
+    0% {
+        background-image: url(./imagenes/harina.jpg);
+}
+25%{
+    background-image: url(./imagenes/masa.jpg);
+}
+50%{
+    background-image: url(./imagenes/bollos-pan.jpg);
+}
+75%{
+    background-image: url(./imagenes/pan.jpg);
+}
+100%{
+    background-image: url(./imagenes/pan4.jpg);
+}
+
 }
 
 /* maquinas */
@@ -156,6 +177,7 @@ h4 {
     border: solid 4px rgb(197, 147, 197);
 }
 
+/* contacto */
 .formulario{
     width: 50%;
     height: 45%;
@@ -295,16 +317,18 @@ a {
         font-size: 40px;
         text-align: justify;
     }
+
 /* receta pan */
     .grillaReceta {
         grid-template-columns: 400px 400px;
-        grid-template-rows: 250px 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
         justify-content: center;
     }
 
     .ingredienteFinal {
         font-size: 30px;
     }
+
 /* footer */
     .contenedor {
         grid-template-columns: 500px 100px;
