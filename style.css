@@ -18,7 +18,23 @@ h1 {
 }
 
 /* nav */
-nav {
+
+.menuNav{
+    background-color:rgb(248, 234, 220) ;
+}
+
+.categoria{
+    color: rgb(226, 151, 126);
+    font-size: 30px;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    /* color: var(--bs-navbar-active-color); */
+    color: rgb(226, 151, 126);
+}
+
+
+/* nav {
     background-color: rgb(248, 234, 220);
     display: flex;
     justify-content: space-between;
@@ -51,7 +67,7 @@ ul {
     margin: auto;
     width: fit-content;
 }
-
+ */
 /* body */
 /* layout con grid */
 body {
