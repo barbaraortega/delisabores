@@ -24,7 +24,7 @@ h1 {
     justify-content: center;
 }
 
-.categoria{
+.nav-link{
     color: rgb(226, 151, 126);
     font-size: 30px;
     margin: 10px;
@@ -36,8 +36,7 @@ h1 {
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
-    /* color: var(--bs-navbar-active-color); */
-    color: rgb(226, 151, 126);
+     color: rgb(226, 151, 126);
 }
 
 
@@ -127,7 +126,7 @@ h2 {
     margin: auto;
     padding: auto;
     width: fit-content;
-    font-weight: 80;
+    /* font-weight: 80; */
     font-size: 45px;
 }
 
@@ -196,14 +195,22 @@ h4 {
 /* quien soy */
 .imagenResaltada {
     margin: auto;
-    display: block;
+    margin-left: 530px;
+   
     border: solid 4px rgb(197, 147, 197);
 }
+
+/* .imagenResaltada {
+    margin: auto;
+    margin-left: 530px;
+    /* display: block; */
+/*     border: solid 4px rgb(197, 147, 197);
+}  */
 
 /* contacto */
 .formulario{
     width: 50%;
-    height: 45%;
+    height: 35%;
     margin: auto;
     background-color: rgba(0,0,0,0.3);
     padding: 10px 10px;
@@ -235,6 +242,19 @@ input{
     align-content: center;
  
 }
+
+/* boton formulario revisar */
+.btn{
+
+        background-color: palevioletred;
+       
+       
+        /* padding: 20px;
+        margin: 10px; */
+        align-content: center;
+    
+}
+
 .boton{
     background-color: palevioletred;
     border: none;
@@ -248,8 +268,8 @@ input{
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
 }
 
 /* footer */

@@ -9,6 +9,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Cormorant+Garamond&family=Gentium+Plus&display=swap"
     rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="../style.css">
   <title>Deli sabores</title>
 </head>
@@ -18,19 +19,24 @@
     <!-- nav y logo -->
     <h1>Deli Sabores</h1>
 
-    <nav class="navegacion">
-
-      <ul class="menu">
-
-        <li class="encabezadoMenu"><a href="../index.html">Home</a></li>
-        <li class="encabezadoMenu"><a href="./Recetas.html">Recetas</a></li>
-        <li class="encabezadoMenu"><a href="./Maquinas.html">Maquinas</a></li>
-        <li class="encabezadoMenu"><a href="./Quien-Soy.html">Quien soy</a></li>
-        <li class="encabezadoMenu"><a href="./Contacto.html">Contacto</a></li>
-
-      </ul>
-
+    <nav class="navbar navbar-expand-lg menuNav">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link  " href="../index.html">Home</a>
+            <a class="nav-link  active " aria-current="page" href="./Recetas.html">Recetas</a>
+            <a class="nav-link " href="./Maquinas.html">Maquinas</a>
+            <a class="nav-link " href="./Quien-Soy.html">Quien soy</a>
+            <a class="nav-link  " href="./Contacto.html">Contacto</a>
+          
+          </div>
+        </div>
+      </div>
     </nav>
+
 
     <div class="logo">
       <a href="../index.html"> <img src="../imagenes/verduras.jpg" alt="Logo de mi pagina"></a>
@@ -66,9 +72,14 @@
        <input type="mensaje" id="mensaje" placeholder="Deja aca tu mensaje" size="60">
       </div>
 
-      <div class="botones">
+     <!--  <div> -->
+      <button type="button" class="btn btn-primary btn-lg">Submit</button>
+      <button type="button" class="btn btn-secondary btn-lg">Resert</button>
+   <!--  </div> -->
+
+     <!--  <div class="botones">
         <input class="boton" type="submit">
-        <input class="boton" type="reset">
+        <input class="boton" type="reset"> -->
       </div>
 
     </form>
@@ -137,6 +148,8 @@
 
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 
 </html>
