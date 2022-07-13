@@ -47,50 +47,45 @@
   <main>
 
     <h2>Contacto</h2>
-
-    <form class="formulario">
-
-      <div class="textoFormulario">
-        <input type="text" placeholder="Nombre completo" size="60" >
+<div class="formato">
+    <form class="row g-3 fomulario">
+      <div class="col-md-6">
+        <label for="inputNombre4" class="form-label">Nombre Completo</label>
+        <input type="nombre" class="form-control" id="inputNombre4">
       </div>
-
-      <div class="textoFormulario">
-        <input type="email" id="email" placeholder="Email" size="60">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="Email" class="form-control" id="inputEmail4">
       </div>
-
-      <div class="textoFormulario">
-        <label for="masculino">Hombre</label>
-        <input type="radio" id="masculino" name="genero">
-        <label for="femenino">Mujer</label>
-        <input type="radio" id="femenino" name="genero">
-        <label for="otro">Otro</label>
-        <input type="radio" id="Otro" name="genero">
+     
+      <div class="col-12">
+        <label for="inputComentario" class="form-label">Deja aca tu comentario</label>
+        <textarea class="form-control" id="inputComentario"></textarea> <!-- placeholder="Deja aca tu comentario"> -->
       </div>
-
-      <div class="textoFormulario">
-       <!--  <textarea name="mensaje" placeholder="Deja aca tu mensaje"></textarea> -->
-       <input type="mensaje" id="mensaje" placeholder="Deja aca tu mensaje" size="60">
+     
+      <div class="col-md-4">
+        <label for="inputGenero" class="form-label">Genero</label>
+        <select id="inputGenero" class="form-select">
+          <option selected>Elige</option>
+          <option>Mujer</option>
+          <option>Hombre</option>
+          <option>Otro</option>
+        </select>
       </div>
-
-     <!--  <div> -->
-      <button type="button" class="btn btn-primary btn-lg">Submit</button>
-      <button type="button" class="btn btn-secondary btn-lg">Resert</button>
-   <!--  </div> -->
-
-     <!--  <div class="botones">
-        <input class="boton" type="submit">
-        <input class="boton" type="reset"> -->
+    
+      <div class="col-12">
+        <button type="enviar" class="btn btn-primary">Enviar</button>
       </div>
-
     </form>
+  </div>
 
     <div>
       <h2> Mi zona</h2>
 
-      <div class="zonaConcepcion">
+      <div class="container zonaConcepcion ">
 
-        <div>
-          <p class="descripcion"> Concepción es una comuna y ciudad chilena perteneciente al área metropolitana del Gran Concepción, y es la
+        <div class="row">
+          <p class= "concepcion col-sm-12 col-lg-9"> Concepción es una comuna y ciudad chilena perteneciente al área metropolitana del Gran Concepción, y es la
             capital de la provincia homónima y la Región del Biobío. El núcleo urbano de Concepción ejerce un
             significativo impacto en el comercio nacional al ser parte de la región con más industrialización del país.
             Limita al norte con Hualpén, Talcahuano y Penco; al sur con Chiguayante y Hualqui; al este con la comuna de
@@ -100,12 +95,10 @@
             de servicios y funciona como el centro financiero del Gran Concepción. Posee también numerosos colegios y
             universidades, entre las que destacan la Universidad de Concepción, la Universidad del Bío-Bío y la
             Universidad Católica de la Santísima Concepción. </p>
-        </div>
-
-       <!--  <div class="mapa"> -->
-        <iframe
+    
+        <iframe class="col-sm-12 col-lg-3"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102197.9814143502!2d-73.10308564552108!3d-36.82602156063336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b5cdd2bbc63b%3A0x44cb37b752212698!2zQ29uY2VwY2nDs24sIELDrW8gQsOtbw!5e0!3m2!1ses!2scl!4v1654912658528!5m2!1ses!2scl"
-          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><!-- </div> -->
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
     </div>
