@@ -18,12 +18,6 @@ h1 {
 }
 
 /* nav */
-
-.menuNav{
-    background-color:rgb(248, 234, 220) ;
-    justify-content: center;
-}
-
 .nav-link{
     color: rgb(226, 151, 126);
     font-size: 30px;
@@ -153,32 +147,21 @@ h4 {
 }
 
 /* maquinas */
-
+.videoMaquina{
+    margin: auto;
+    margin-left: 400px;
+    border: solid 4px rgb(197, 147, 197);  
+}
 
 /* quien soy */
 .imagenResaltada {
     margin: auto;
-    margin-left: 400px;
+    margin-left: 520px;
     border: solid 4px rgb(197, 147, 197);
 }
 /* contacto */
-.formulario{
-    padding: 15px;
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  color: black;
-  font-weight: bold;
-  background: #ff9d00;
-  font-size: 1.2rem;
-  border-radius: 5px;
-}
 .formato{
     padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
     width: 70%;
     color: black;
     font-weight: bold;
@@ -204,27 +187,9 @@ input{
     text-align: center;
 }
 
-.botones{
-    display: flex;
-    justify-content: center;
-    align-content: center;
- 
-}
-
-/* boton formulario revisar */
-
 .btn{
  background-color: palevioletred;
  margin-left: 430px;
-}
-
-.boton{
-    background-color: palevioletred;
-    border: none;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    align-content: center;
 }
 
 .concepcion{
@@ -299,7 +264,8 @@ a {
     }
 
     body{
-        background-color: rgb(236, 199, 210);
+        background-image: none;
+        background-color: rgb(252, 225, 233);
     }
 
     /* receta pan */
@@ -341,28 +307,15 @@ a {
    /* contacto */
   
     h3 {
-        font-size: 20vw;
+        font-size: 10vw;
         margin-top: 20px;
     }
     h4{
         font-size: 35px;
     }
-    
-    .formulario{
-        width: 80%;
-        height: auto;
-        object-position: right;
-        justify-content: center;
-        box-sizing: border-box;
+    .concepcion{
+        font-size: 30px;
     }
-
- input{
-    font-size: 25px;
-    height: 40px;
-    size: 20px;
-    text-align: center;
- }
-  
 }
 
 @media screen and (max-width: 480px) {
@@ -374,6 +327,11 @@ a {
     .descripcion {
         font-size: 65px;
         text-align: justify;
+    }
+
+    body{
+        background-image: none;
+        background-color: rgb(252, 225, 233);
     }
 
 /* receta pan */
@@ -434,7 +392,7 @@ a {
    /* contacto */
 
  .concepcion{
-    font-size: 50px;
+    font-size: 60px;
  }
 h2{
     font-size: 65px;
@@ -448,20 +406,7 @@ h4{
     font-size: 55px;
     }
     
-.formulario{
-    width: 80%;
-    height: auto;
-    object-position: right;
-    justify-content: center;
-    box-sizing: border-box;
-    }
 
- input{
-    font-size: 25px;
-    height: 40px;
-    size: 20px;
-    text-align: center;
- }
-
+ 
   
 }
