@@ -25,7 +25,6 @@ h1 {
     margin-left: 100px;
     height: 40px;
     width: auto;
-  
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
@@ -106,19 +105,14 @@ h4 {
     text-decoration: none;
 }
 
-.grillaReceta {
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 50px 50px 50px;
-    justify-content: center;
+.grilla{
+    background-color: rgb(184, 238, 220);
 }
 
-.ingredienteFinal {
+.ingrediente{
     border: solid 1px rgb(226, 151, 126);
     border-radius: 5px;
-    background-color: rgb(184, 238, 220);
+    font-size: 20px;
 }
 
 .foto {
@@ -162,7 +156,6 @@ h4 {
     margin: auto;
     margin-left: 520px;
     border: solid 4px rgb(197, 147, 197);
-
 }
 
 .cocinera:hover{
@@ -222,13 +215,13 @@ footer {
 .contenedorSociales a{
     font-size: 20px;
     color: rgb(228, 85, 109);
-   
 }
 
 .redes{
     text-align: center;
 }
- .contenedorSociales{
+
+.contenedorSociales{
    margin-left: 200px;
    font-size: 20px;
 }
@@ -244,61 +237,9 @@ footer {
 }
 
 .chef a{
-    color: rgb(228, 85, 109);
-    
+    color: rgb(228, 85, 109);  
 } 
 
-
-/* .contenedor {
-    display: grid;
-    grid-template-columns: 200px 100px;
-    grid-template-rows: repeat(3, 40px);
-    justify-content: start;
-    margin: 10px;
-    margin-top: 20px;
-    background-color: rgb(245, 238, 229);
-}
-
-.cocinaChilena {
-    justify-content: center;
-    align-items: star;
-    font-size: 15px;
-    color: rgb(190, 75, 94);
-}
-
-.bandera {
-    align-items: center;
-    height: fit-content;
-    margin-left: 20px;
-    justify-content: center;
-}
-
-.cocinaAlvaro {
-    grid-column: 1/3;
-    align-items: center;
-}
-
-.cocinaSilvana {
-    grid-column: 1/3;
-}
-
-.piePagina_item,
-a {
-    color: rgb(235, 59, 97);
-    display: inline-block;
-    margin: 5px;
-}
-
-.piePagina {
-    margin-left: 1100px;
-    padding: auto;
-    width: 100;
-    border-radius: 6px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
- */
 
 @media screen and (max-width:768px) {
     
@@ -322,7 +263,7 @@ a {
         justify-content: center;
     }
 
-    .ingredienteFinal {
+    .ingrediente {
         font-size: 30px;
     }
 
@@ -331,29 +272,7 @@ a {
 footer{
     background-color: beige;
 }
-    .contenedor {
-        grid-template-columns: 500px 100px;
-        grid-template-rows: repeat(3, 100px);
-        grid-auto-flow: dense;
-    }
-
-    .cocinaChilena {
-        font-size: 30px;
-    }
-
-    .bandera {
-        align-items: center;
-        height: 50px;
-        width: 50px;
-    }
-
-    .cocinaAlvaro {
-        font-size: 30px;
-    }
-
-    .cocinaSilvana {
-        font-size: 30px;
-    }
+    
 
    /* contacto */
   
@@ -392,53 +311,9 @@ footer{
         justify-content: center;
     }
 
-    .ingredienteFinal {
-        font-size: 40px;
+    .ingrediente{
+        font-size: 60px;
     }
-
-/* footer */
-    .contenedor {
-        grid-template-columns: 600px 100px;
-        grid-template-rows: repeat(3, 150px);
-        grid-auto-flow: dense;
-    }
-
-    .cocinaChilena {
-        font-size: 50px;
-    }
-
-    .bandera {
-        align-items: center;
-        height: 70px;
-        width: 70px;
-    }
-
-    .cocinaAlvaro {
-        font-size: 45px;
-    }
-
-    .cocinaSilvana {
-        font-size: 45px;
-    }
-    .piePagina_item,
-a {
-    margin: 8px;
-}
-
-.piePagina {
-    margin-left: 1100px;
-    padding: auto;
-    width: 400;
-    height: 300px;
-    border-radius: 6px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-.piePagina_item{
-    width: 30px;
-    height: 30px;
-}
 
    /* contacto */
 
@@ -456,8 +331,5 @@ h3 {
 h4{
     font-size: 55px;
     }
-    
-
- 
   
 }
