@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 html {
     height: 100%;
 }
@@ -18,7 +17,7 @@ h1 {
 }
 
 /* nav */
-.nav-link{
+.nav-link {
     color: rgb(226, 151, 126);
     font-size: 30px;
     margin: 10px;
@@ -27,8 +26,9 @@ h1 {
     width: auto;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
-     color: rgb(226, 151, 126);
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: rgb(226, 151, 126);
 }
 
 /* body */
@@ -51,7 +51,6 @@ body {
         "principal"
         "pie";
 }
-
 .descripcion {
     font-family: Gentium Plus;
     background-color: rgb(223, 252, 252);
@@ -61,19 +60,16 @@ body {
     margin-top: 30px;
     font-size: 20px;
 }
-
 header {
     height: 150px;
     grid-area: encabezado;
 }
-
 .logo {
     display: flex;
     justify-content: center;
     align-content: center;
     grid-area: logo;
 }
-
 main {
     background-color: rgb(223, 252, 252);
     font-family: 'Comfortaa', cursive;
@@ -89,7 +85,6 @@ h2 {
     width: fit-content;
     font-size: 45px;
 }
-
 h3 {
     margin: auto;
     padding: auto;
@@ -97,24 +92,20 @@ h3 {
     font-weight: 200;
     font-size: 30px;
 }
-
 h4 {
     margin-left: 30px;
     font-weight: 200;
     font-size: 20px;
     text-decoration: none;
 }
-
-.grilla{
+.grilla {
     background-color: rgb(184, 238, 220);
 }
-
-.ingrediente{
+.ingrediente {
     border: solid 1px rgb(226, 151, 126);
     border-radius: 5px;
     font-size: 20px;
 }
-
 .foto {
     width: 40%;
     height: 300px;
@@ -123,24 +114,28 @@ h4 {
     border-radius: 5px;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: amasado 15s infinite ;
+    animation: amasado 15s infinite;
 }
-@keyframes amasado{
+@keyframes amasado {
     0% {
         background-image: url(./imagenes/harina.jpg);
-}
-25%{
-    background-image: url(./imagenes/masa.jpg);
-}
-50%{
-    background-image: url(./imagenes/bollos-pan.jpg);
-}
-75%{
-    background-image: url(./imagenes/pan.jpg);
-}
-100%{
-    background-image: url(./imagenes/pan4.jpg);
-}
+    }
+
+    25% {
+        background-image: url(./imagenes/masa.jpg);
+    }
+
+    50% {
+        background-image: url(./imagenes/bollos-pan.jpg);
+    }
+
+    75% {
+        background-image: url(./imagenes/pan.jpg);
+    }
+
+    100% {
+        background-image: url(./imagenes/pan4.jpg);
+    }
 
 }
 
@@ -152,24 +147,22 @@ h4 {
     margin-left: 520px;
     border: solid 4px rgb(197, 147, 197);
 }
-
-.cocinera:hover{
+.cocinera:hover {
     transform: scale(2);
 }
 
 /* contacto */
-.formato{
+.formato {
     padding: 15px;
     width: 70%;
     color: black;
     font-weight: bold;
     background: #a8d3d4;
     font-size: 1.2rem;
-    border-radius: 5px; 
+    border-radius: 5px;
     margin-left: 200px;
 }
-
-.textoFormulario{
+.textoFormulario {
     font-size: 20px;
     width: 100%;
     margin-bottom: 20px;
@@ -178,106 +171,86 @@ h4 {
     border: none;
     text-align: center;
 }
-
-input{
+input {
     height: 40px;
     size: 50px;
     text-align: center;
 }
-
-.btn{
- background-color: palevioletred;
- margin-left: 430px;
+.btn {
+    background-color: palevioletred;
+    margin-left: 430px;
 }
-
-.concepcion{
+.concepcion {
     font-size: 20px;
 }
 
-/* footer 1*/
-
+/* footer*/
 footer {
     grid-area: pie;
     background-color: rgb(221, 221, 221);
-
     position: absolute;
     bottom: 0;
     width: 100%;
 }
-
-.contenedorSociales a{
+.contenedorSociales a {
     font-size: 20px;
     color: rgb(228, 85, 109);
 }
-
-.redes{
+.redes {
     text-align: center;
 }
-
-.contenedorSociales{
-   margin-left: 200px;
-   font-size: 20px;
+.contenedorSociales {
+    margin-left: 200px;
+    font-size: 20px;
 }
-
-.bandera{
+.bandera {
     text-align: start;
 }
-
- 
-.chef{
+.chef {
     margin-left: 20px;
-    
-}
 
-.chef a{
-    color: rgb(228, 85, 109);  
-} 
+}
+.chef a {
+    color: rgb(228, 85, 109);
+}
 
 
 @media screen and (max-width:768px) {
-    
+
     h1 {
         font-size: 85px;
     }
-
-   .descripcion{
+    .descripcion {
         font-size: 40px;
     }
-
-    body{
+    body {
         background-image: none;
         background-color: rgb(252, 225, 233);
     }
 
     /* receta pan */
-    .grillaReceta {
-        grid-template-columns: 400px 400px;
-        grid-template-rows: 100px 100px 100px;
-        justify-content: center;
-    }
-
     .ingrediente {
         font-size: 30px;
     }
 
-/* footer */
-/* revisar */
-footer{
-    background-color: beige;
-}
-    
-
-   /* contacto */
-  
+    /* contacto */
     h3 {
         font-size: 10vw;
         margin-top: 20px;
     }
-    h4{
+    h4 {
         font-size: 35px;
     }
-    .concepcion{
+    .concepcion {
         font-size: 30px;
+    }
+    .bandera {
+        text-align: center;
+    }
+
+    /* footer */
+    footer {
+        background-color: beige;
     }
 }
 
@@ -292,58 +265,50 @@ footer{
         text-align: justify;
     }
 
-    body{
+    body {
         background-image: none;
         background-color: rgb(252, 225, 233);
-        grid-template-rows: 300px 200px 1fr 700px;     
+        grid-template-rows: 300px 200px 1fr 700px;
     }
 
-/* receta pan */
-    .grillaReceta {
-        grid-template-columns: 500px 500px;
-        grid-template-rows: 170px 150px 150px;
-        justify-content: center;
-    }
-
-    .ingrediente{
+    /* receta pan */
+    .ingrediente {
         font-size: 60px;
     }
 
-   /* contacto */
-
- .concepcion{
-    font-size: 60px;
- }
-h2{
-    font-size: 65px;
+    /* contacto */
+    .concepcion {
+        font-size: 60px;
     }
 
-h3 {
-    font-size: 20vw;
-    margin-top: 20px;
+    h2 {
+        font-size: 65px;
     }
-h4{
-    font-size: 55px;
+
+    h3 {
+        font-size: 20vw;
+        margin-top: 20px;
     }
-  
-    .contenedorSociales a{
+
+    h4 {
+        font-size: 55px;
+    }
+
+    /* footer */
+    .contenedorSociales a {
         font-size: 50px;
+    }
 
-    }
-    
-    .redes{
+    .redes {
         text-align: center;
     }
-    
-    
-    .bandera{
+
+    .bandera {
         text-align: center;
     }
-    
-     
-    .chef a{
-       font-size: 50px;
-       text-align: end;
-    } 
-    
+
+    .chef a {
+        font-size: 50px;
+    }
+
 }
