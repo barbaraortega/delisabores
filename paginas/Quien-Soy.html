@@ -9,7 +9,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Cormorant+Garamond&family=Gentium+Plus&display=swap"
     rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="../style.css">
   <title>Deli sabores</title>
 </head>
@@ -22,7 +24,8 @@
 
     <nav class="navbar navbar-expand-lg menuNav">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -32,7 +35,7 @@
             <a class="nav-link " href="./Maquinas.html">Maquinas</a>
             <a class="nav-link " href="./Quien-Soy.html">Quien soy</a>
             <a class="nav-link  " href="./Contacto.html">Contacto</a>
-          
+
           </div>
         </div>
       </div>
@@ -51,8 +54,8 @@
     <h2>Quien Soy</h2>
 
     <section>
-      <img class="imagenResaltada" src="../imagenes/cocinerita.jpg" class="img-fluid" alt="logo de imagen">
-     <!--  <img class="imagenResaltada" src="../imagenes/cocinerita.jpg" alt="logo de mi imagen" width="400px" height="250px"> -->
+      <img class="imagenResaltada cocinera" src="../imagenes/cocinerita.jpg" class="img-fluid" alt="logo de imagen">
+      <!--  <img class="imagenResaltada" src="../imagenes/cocinerita.jpg" alt="logo de mi imagen" width="400px" height="250px"> -->
 
       <p class="descripcion"> Mi nombre es Bárbara, soy chilena, de profesión Trabajadora Social, nada que ver con la
         cocina, pero durante la pandemia por Covid-19 en Chile, surgió un inesperado gustito por ese lugar en el que
@@ -67,42 +70,56 @@
 
   </main>
 
-  <footer>
-    <!-- links cocina chilena y redes sociales-->
+ 
+  <div class="container-fluid footer">
 
-    <div class="contenedor">
+    <div class="row p-5 bg-secundary">
 
-      <div class="cocinaChilena">
-        Links de interes Cocina Chilena:
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <h4 class="mb-3 cocina"> Links de interes cocina Chilena:</h4>
+      
+
+      <div class="chef mb-2">
+        <a href="https://www.youtube.com/c/AlvaroBarrientosMontero" target="_blank"> Chef Alvaro Barrientos </a>
       </div>
 
-      <div class="bandera">
-        <img width="50px" height="50px" src="../imagenes/bandera.jpg" alt="banderaChile">
+      <div class=" chef mb-2">
+        <a href="https://www.youtube.com/c/silvanacocina " target="_blank">Silvana Cocina </a>
       </div>
-
-      <div class="cocinaAlvaro">
-        <a href="https://www.youtube.com/c/AlvaroBarrientosMontero" target="_blank">Alvaro Barrientos</a>
-      </div>
-
-      <div class="cocinaSilvana">
-        <a href="https://www.youtube.com/c/silvanacocina " target="_blank">Silvana Cocina</a>
-      </div>
-
     </div>
 
-    <div>
-      <ul class="piePagina">
-        <li class="piePagina_item"><a href="https://www.facebook.com/deli-sabores" target="_blank">
-            <img width="30px" height="30px"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" /></a></li>
-        <li class="piePagina_item"><a href="https://www.instagram.com/deli-sabores" target="_blank"><img width="30px"
-              height="30px" src="../imagenes/instagram-logo.png" alt="instagram"></a></li>
-      </ul>
+<div class="redes col-lg-2 col-md-2 col-sm-12 bandera">
+<div>
+  <img width="90px" height="90px"src="../imagenes/bandera.jpg" alt="bandera chile">
+</div>
+</div>
+
+    <div class=" redes col-lg-4 col-md-4 col-sm-12 ">
+      <h4 class="contenedorSociales mb-3"> Redes Sociales:</h4>
+
+      <div class="contenedorSociales mb-2">
+        <a href="https://www.facebook.com/deli-sabores" target="_blank">
+          <i class="bi bi-facebook"></i>
+      </div>
+
+      <div class="contenedorSociales mb-2">
+        <a href="https://www.instagram.com/deli-sabores" target="_blank">
+          <i class="bi bi-instagram"></i>
+      </div>
     </div>
+
+  </div>
+
 
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
