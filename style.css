@@ -145,11 +145,6 @@ h4 {
 }
 
 /* maquinas */
-.videoMaquina{
-    margin: auto;
-    margin-left: 400px;
-    border: solid 4px rgb(197, 147, 197);  
-}
 
 /* quien soy */
 .imagenResaltada {
@@ -198,8 +193,6 @@ input{
 .concepcion{
     font-size: 20px;
 }
-
-
 
 /* footer 1*/
 
@@ -302,6 +295,7 @@ footer{
     body{
         background-image: none;
         background-color: rgb(252, 225, 233);
+        grid-template-rows: 300px 200px 1fr 700px;     
     }
 
 /* receta pan */
@@ -332,4 +326,24 @@ h4{
     font-size: 55px;
     }
   
+    .contenedorSociales a{
+        font-size: 50px;
+
+    }
+    
+    .redes{
+        text-align: center;
+    }
+    
+    
+    .bandera{
+        text-align: center;
+    }
+    
+     
+    .chef a{
+       font-size: 50px;
+       text-align: end;
+    } 
+    
 }
