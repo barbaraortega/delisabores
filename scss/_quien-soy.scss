@@ -1,0 +1,24 @@
+h2 {
+    margin: auto;
+    padding: auto;
+    width: fit-content;
+    font-size: 45px;
+}
+.imagenResaltada_cocinera {
+    margin: auto;
+    margin-left: 520px;
+    border: solid 4px rgb(197, 147, 197);
+
+    &:hover {
+    transform: scale(2);
+}
+}
+.descripcion {
+    font-family: Gentium Plus;
+    background-color: rgb(223, 252, 252);
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+}

@@ -38,7 +38,7 @@ body {
     min-height: 100vh;
     padding-bottom: 30uh;
 
-    background-image: url(../deli-sabores/imagenes/sobrero\ de\ cocina.webp);
+    background-image: url(./imagenes/sombrero.jpg);
     background-size: cover;
     margin: 0;
     height: 100%;
@@ -142,12 +142,12 @@ h4 {
 /* maquinas */
 
 /* quien soy */
-.imagenResaltada {
+.imagenResaltada_cocinera {
     margin: auto;
     margin-left: 520px;
     border: solid 4px rgb(197, 147, 197);
 }
-.cocinera:hover {
+.imagenResaltada_cocinera:hover {
     transform: scale(2);
 }
 

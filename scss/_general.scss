@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+
+h1 {
+    color: rgb(255, 42, 148);
+    margin: auto;
+    width: fit-content;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 80px;
+}
+
+nav{
+    background-color:rgb(223, 252, 252) ;
+}
+
+.nav-link{
+    color:$color-menu ;
+    font-size: 30px;
+    margin: 10px;
+    margin-left: 100px;
+    height: 40px;
+    width: auto;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color:$color-menu;
+}
+
+/* body */
+/* layout con grid */
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 30uh;
+    background-image: url(../imagenes/fondo-comida.jpg);
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 200px 1fr 300px;
+    grid-template-areas:
+        "encabezado"
+        "logo"
+        "principal"
+        "pie";
+}
+.descripcion {
+    font-family: Gentium Plus;
+    background-color: rgb(223, 252, 252);
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+header {
+    height: 150px;
+    grid-area: encabezado;
+    background-color: rgb(241, 229, 231);
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    grid-area: logo;
+    /* background-color: rgb(248, 228, 231); */
+}
+main {
+    background-color: rgb(223, 252, 252);
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Gentium Plus', serif;
+    grid-area: principal;
+}
+/* footer*/
+footer {
+    grid-area: pie;
+    background-color: rgb(221, 221, 221);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.contenedorSociales a {
+    font-size: 20px;
+    color:$color-footer;
+}
+.redes {
+    text-align: center;
+}
+.contenedorSociales {
+    margin-left: 200px;
+    font-size: 20px;
+}
+.bandera {
+    text-align: start;
+}
+.chef {
+    margin-left: 20px;
+
+}
+.chef a {
+    color:$color-footer;
+}
+
