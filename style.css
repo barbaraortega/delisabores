@@ -248,10 +248,10 @@ footer {
         text-align: center;
     }
 
-    /* footer */
-    footer {
+     /* footer */
+   footer {
         background-color: beige;
-    }
+    } 
 }
 
 @media screen and (max-width: 480px) {
@@ -261,7 +261,7 @@ footer {
     }
 
     .descripcion {
-        font-size: 65px;
+        font-size: 70px;
         text-align: justify;
     }
 
@@ -294,7 +294,7 @@ footer {
         font-size: 55px;
     }
 
-    /* footer */
+   /* footer */
     .contenedorSociales a {
         font-size: 50px;
     }
@@ -309,6 +309,6 @@ footer {
 
     .chef a {
         font-size: 50px;
-    }
+    }  
 
 }

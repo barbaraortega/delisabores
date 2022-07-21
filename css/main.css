@@ -36,8 +36,8 @@ body {
   padding-bottom: 30uh;
   background-image: url(../imagenes/fondo-comida.jpg);
   background-size: cover;
-  margin: 0;
-  height: 100%;
+  /*  margin: 0;
+    height: 100%; */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 300px 200px 1fr 300px;
@@ -79,6 +79,11 @@ footer {
   bottom: 0;
   width: 100%; }
 
+.btnFooter {
+  background-color: palevioletred;
+  border: solid 1px #e2977e;
+  border-radius: 5px; }
+
 .contenedorSociales a {
   font-size: 20px;
   color: #e4556d; }
@@ -87,7 +92,7 @@ footer {
   text-align: center; }
 
 .contenedorSociales {
-  margin-left: 200px;
+  margin-left: 20px;
   font-size: 20px; }
 
 .bandera {
@@ -98,6 +103,39 @@ footer {
 
 .chef a {
   color: #e4556d; }
+
+.company {
+  color: #e4556d; }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 85px; }
+  .descripcion {
+    font-size: 60px; }
+  body {
+    background-image: none;
+    background-color: #fce1e9; }
+  h3 {
+    font-size: 10vw;
+    margin-top: 20px; }
+  h4 {
+    font-size: 35px; } }
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 90px; }
+  .descripcion {
+    font-size: 90px;
+    text-align: justify; }
+  body {
+    background-image: none;
+    background-color: #fce1e9;
+    grid-template-rows: 300px 200px 1fr 700px; }
+  h2 {
+    font-size: 65px; }
+  h3 {
+    font-size: 20vw;
+    margin-top: 20px; } }
 
 h2 {
   margin: auto;
