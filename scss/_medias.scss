@@ -1,0 +1,45 @@
+@media screen and (max-width:768px) {
+    h1 {
+        font-size: 85px;
+    }
+    .descripcion {
+        font-size: 40px;
+    }
+    body {
+        background-image: none;
+        background-color: rgb(252, 225, 233);
+    }
+    h3 {
+        font-size: 10vw;
+        margin-top: 20px;
+    }
+    h4 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+
+    h1 {
+        font-size: 90px;
+    }
+
+    .descripcion {
+        font-size: 50px;
+        text-align: justify;
+    }
+
+    body {
+        background-image: none;
+        background-color: rgb(252, 225, 233);
+        grid-template-rows: 300px 200px 1fr 700px;
+    }
+    h2 {
+        font-size: 65px;
+    }
+
+    h3 {
+        font-size: 20vw;
+        margin-top: 20px;
+    }
+}

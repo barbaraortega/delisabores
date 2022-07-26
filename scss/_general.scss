@@ -15,12 +15,27 @@ h1 {
     font-size: 80px;
 }
 
+h2 {
+    @include titulos(45px);
+}
+
+h3 {
+   @include titulos(30px);
+}
+
+h4 {
+    margin-left: 30px;
+    font-weight: 200;
+    font-size: 20px;
+    text-decoration: none;
+}
+
 nav{
     background-color:rgb(223, 252, 252) ;
 }
 
 .nav-link{
-    color:$color-menu ;
+    color:map-get($colores,"color-menu");
     font-size: 30px;
     margin: 10px;
     margin-left: 100px;
@@ -30,7 +45,7 @@ nav{
 
 .navbar-nav .nav-link.active,
 .navbar-nav .show>.nav-link {
-    color:$color-menu;
+    color:map-get($colores,"color-menu");
 }
 
 /* body */
@@ -41,8 +56,6 @@ body {
     padding-bottom: 30uh;
     background-image: url(../imagenes/fondo-comida.jpg);
     background-size: cover;
-   /*  margin: 0;
-    height: 100%; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 300px 200px 1fr 300px;
@@ -87,6 +100,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    height: 70%;
 }
 .btnFooter {
     background-color: palevioletred;
@@ -95,7 +109,7 @@ footer {
 }
 .contenedorSociales a {
     font-size: 20px;
-    color:$color-footer;
+    color:map-get($colores,"color-footer");
 }
 .redes {
     text-align: center;
@@ -112,55 +126,10 @@ footer {
 
 }
 .chef a {
-    color:$color-footer;
+    color:map-get($colores ,"color-footer");
 }
 .company{
-    color: $color-footer;
+    color: map-get($colores ,"color-footer");
 }
 
 
-@media screen and (max-width:768px) {
-    h1 {
-        font-size: 85px;
-    }
-    .descripcion {
-        font-size: 60px;
-    }
-    body {
-        background-image: none;
-        background-color: rgb(252, 225, 233);
-    }
-    h3 {
-        font-size: 10vw;
-        margin-top: 20px;
-    }
-    h4 {
-        font-size: 35px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-    h1 {
-        font-size: 90px;
-    }
-
-    .descripcion {
-        font-size: 90px;
-        text-align: justify;
-    }
-
-    body {
-        background-image: none;
-        background-color: rgb(252, 225, 233);
-        grid-template-rows: 300px 200px 1fr 700px;
-    }
-    h2 {
-        font-size: 65px;
-    }
-
-    h3 {
-        font-size: 20vw;
-        margin-top: 20px;
-    }
-}

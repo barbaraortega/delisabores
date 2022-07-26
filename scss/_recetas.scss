@@ -1,0 +1,40 @@
+.grilla {
+    background-color: rgb(184, 238, 220);
+}
+.ingrediente {
+    border: solid 1px rgb(226, 151, 126);
+    border-radius: 5px;
+    font-size: 20px;
+}
+.foto {
+    width: 40%;
+    height: 300px;
+    margin: 15px auto;
+    border: solid 3px rgb(226, 151, 126);
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: amasado 15s infinite;
+}
+@keyframes amasado {
+    0% {
+        background-image: url(./imagenes/harina.jpg);
+    }
+
+    25% {
+        background-image: url(./imagenes/masa.jpg);
+    }
+
+    50% {
+        background-image: url(./imagenes/bollos-pan.jpg);
+    }
+
+    75% {
+        background-image: url(./imagenes/pan.jpg);
+    }
+
+    100% {
+        background-image: url(./imagenes/pan4.jpg);
+    }
+
+}

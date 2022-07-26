@@ -1,4 +1,13 @@
 $border: solid 1px rgb(226, 151, 126);
-$color-menu: rgb(226, 151, 126);
-$color-footer:rgb(228, 85, 109);
 
+$colores:( 
+"color-menu": rgb(226, 151, 126),
+"color-footer": rgb(228, 85, 109)
+);
+
+@mixin titulos($fsize){
+    margin: auto;
+    padding: auto;
+    width: fit-content;
+    font-size:$fsize;
+}
