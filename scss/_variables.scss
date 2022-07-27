@@ -5,6 +5,9 @@ $colores:(
 "color-footer": rgb(228, 85, 109)
 );
 
+$bgcolorBoton:palevioletred;
+
+
 @mixin titulos($fsize){
     margin: auto;
     padding: auto;

@@ -177,7 +177,7 @@ input {
     text-align: center;
 }
 .btn {
-    background-color: palevioletred;
+    background-color: rgb(228, 85, 109);
     margin-left: 430px;
 }
 .concepcion {
@@ -212,6 +212,10 @@ footer {
 }
 .chef a {
     color: rgb(228, 85, 109);
+}
+
+.btnFooter{
+    background-color:rgb(228, 85, 109);
 }
 
 

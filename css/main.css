@@ -124,6 +124,45 @@ footer {
 .company {
   color: #e4556d; }
 
+.descripcion {
+  font-family: Gentium Plus;
+  background-color: #dffcfc;
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 30px;
+  font-size: 20px; }
+
+.grilla {
+  background-color: #b8eedc; }
+
+.ingrediente {
+  border: solid 1px #e2977e;
+  border-radius: 5px;
+  font-size: 20px; }
+
+.foto {
+  width: 40%;
+  height: 300px;
+  margin: 15px auto;
+  border: solid 3px #e2977e;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: amasado 15s infinite; }
+
+@keyframes amasado {
+  0% {
+    background-image: url(./imagenes/harina.jpg); }
+  25% {
+    background-image: url(./imagenes/masa.jpg); }
+  50% {
+    background-image: url(./imagenes/bollos-pan.jpg); }
+  75% {
+    background-image: url(./imagenes/pan.jpg); }
+  100% {
+    background-image: url(./imagenes/pan4.jpg); } }
+
 .imagenResaltada_cocinera {
   margin: auto;
   margin-left: 520px;
@@ -138,6 +177,37 @@ footer {
   margin-right: 20px;
   margin-left: 20px;
   margin-top: 30px;
+  font-size: 20px; }
+
+.formato {
+  padding: 15px;
+  width: 70%;
+  color: black;
+  font-weight: bold;
+  background: #a8d3d4;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-left: 200px; }
+
+.textoFormulario {
+  font-size: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  height: 20px;
+  border: none;
+  text-align: center; }
+
+input {
+  height: 40px;
+  size: 50px;
+  text-align: center; }
+
+.btn {
+  background-color: palevioletred;
+  margin-left: 430px; }
+
+.concepcion {
   font-size: 20px; }
 
 @media screen and (max-width: 768px) {
