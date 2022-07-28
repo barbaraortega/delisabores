@@ -6,6 +6,16 @@
     border-radius: 5px;
     font-size: 20px;
 }
+.calzon{
+    width: 40%;
+    height: 300px;
+    margin: auto;
+    border: solid 3px rgb(226, 151, 126);
+    border-radius: 5px;
+    /* align-content: center; */
+    display: block;
+
+}
 .foto {
     width: 40%;
     height: 300px;
@@ -18,23 +28,24 @@
 }
 @keyframes amasado {
     0% {
-        background-image: url(./imagenes/harina.jpg);
+        background-image: url(../imagenes/harina.jpg);
     }
 
     25% {
-        background-image: url(./imagenes/masa.jpg);
+        background-image: url(../imagenes/masa.jpg);
     }
 
     50% {
-        background-image: url(./imagenes/bollos-pan.jpg);
+        background-image: url(../imagenes/bollos-pan.jpg);
     }
 
     75% {
-        background-image: url(./imagenes/pan.jpg);
+        background-image: url(../imagenes/pan.jpg);
     }
 
     100% {
-        background-image: url(./imagenes/pan4.jpg);
+        background-image: url(../imagenes/pan4.jpg);
     }
+
 
 }

@@ -6,11 +6,13 @@ $colores:(
 );
 
 $bgcolorBoton:palevioletred;
+$bgcolorprincipal:rgb(223, 252, 252);
 
 
-@mixin titulos($fsize){
+@mixin titulos($fsize,$textcolor){
     margin: auto;
     padding: auto;
     width: fit-content;
     font-size:$fsize;
+    color: $textcolor;
 }
