@@ -7,51 +7,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords"  content="deli, delicia, sabores, comida, comida sana, dulce, salado,postres, alimentos,almuerzo, cena, cocina, gourmet,blog, receta, receta fácil,familia, maquinas de cocina, chile, quién soy">
   <meta name="descripcion"  content="Blog de cocina saludable, dedicado a incentivar la cocina fácil, rica y sana. Además tiene algunos tips de utensilios y máquinas de cocina que harán el trabajo más moderno y aún más fácil">
+  
+  <!-- tipos de letra -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap" rel="stylesheet">
   <link
-    href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Cormorant+Garamond&family=Gentium+Plus&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Cormorant+Garamond&family=Gentium+Plus&family=Quicksand&display=swap"
     rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Cormorant+Garamond&family=Gentium+Plus&family=Quicksand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+
+  <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <!-- estilos -->
   <link rel="stylesheet" href="../css/main.css">
-  <title>Deli sabores-Quien Soy</title>
+  <title>Deli sabores-Home</title>
 </head>
 
 <body>
-
   <header>
-    <!-- nav y logo -->
     <h1>Deli Sabores</h1>
+  </header>
 
-    <nav class="navbar navbar-expand-lg menuNav">
+  <div class="navegacion">
+
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        <a class="navbar-brand" href="#">Deli Sabores</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link  " href="../index.html">Home</a>
-            <a class="nav-link  active " aria-current="page" href="./Recetas.html">Recetas</a>
-            <a class="nav-link " href="./Maquinas.html">Maquinas</a>
-            <a class="nav-link " href="./Quien-Soy.html">Quien soy</a>
-            <a class="nav-link  " href="./Contacto.html">Contacto</a>
-
-          </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Recetas.html">Recetas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Maquinas.html">Maquinas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Quien-Soy.html">Quien soy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./paginas/Contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
+  </div>
 
 
-    <div class="logo">
-      <a href="../index.html"> <img src="../imagenes/verduras.jpg" alt="Logo de mi pagina"></a>
-    </div>
-
-  </header>
+  <div class="logo">
+    <a href="../index.html"> <img src="../imagenes/verduras.jpg" alt="Logo de mi pagina"></a>
+  </div>
 
   <main>
 
@@ -95,8 +110,8 @@
         </div>
 
         <div class="redes col-lg-2 col-md-2 col-sm-2 col-xs-1 bandera">
-          <div>
-            <img width="90px" height="90px" src="../imagenes/bandera.jpg" alt="bandera chile">
+          <div class="bandera">
+            <img src="../imagenes/bandera.jpg" alt="bandera chile">
           </div>
         </div>
 

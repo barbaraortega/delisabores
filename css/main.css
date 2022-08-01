@@ -2,20 +2,76 @@
   margin: 0;
   padding: 0; }
 
-html {
-  height: 100%; }
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "encabezado" "navegacion" "logo" "principal" "pie";
+  background-color: #fce1e9; }
 
-h1 {
+header {
+  grid-area: encabezado;
+  background-color: #dffcfc; }
+
+header h1 {
   color: #ff2a94;
   margin: auto;
   width: fit-content;
-  /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-family: 'Comfortaa', cursive;
   font-family: 'Cormorant Garamond', serif;
   font-family: 'Gentium Plus', serif;
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   font-size: 90px; }
+
+.navegacion {
+  grid-area: navegacion;
+  background-color: #dffcfc; }
+  .navegacion nav {
+    background-color: #dffcfc; }
+
+.navbar-brand {
+  color: #ff2a94;
+  font-family: "Comfortaa", cursive;
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Gentium Plus", serif;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  display: none; }
+
+.nav-link {
+  color: #e2977e;
+  font-size: 30px;
+  margin: 10px; }
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: #e2977e; }
+
+.logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #fce1e9; }
+  .logo a img {
+    max-width: 100%; }
+
+main {
+  grid-area: principal;
+  background-color: #dffcfc;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Gentium Plus', serif; }
+
+.descripcion {
+  font-family: Gentium Plus;
+  background-color: #dffcfc;
+  text-align: justify;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 30px;
+  font-size: 20px; }
 
 h2 {
   margin: auto;
@@ -31,83 +87,16 @@ h3 {
   font-size: 40px;
   color: #e2977e; }
 
-h4 {
-  margin-left: 30px;
-  font-weight: 200;
-  font-size: 20px;
-  text-decoration: none; }
-
-nav {
-  background-color: #dffcfc; }
-
-.nav-link {
-  color: #e2977e;
-  font-size: 30px;
-  margin: 10px;
-  margin-left: 100px;
-  height: 40px;
-  width: auto; }
-
-.navbar-nav .nav-link.active,
-.navbar-nav .show > .nav-link {
-  color: #e2977e; }
-
-/* body */
-/* layout con grid */
-body {
-  position: relative;
-  min-height: 100vh;
-  padding-bottom: 30uh;
-  background-color: #fce1e9;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 300px 200px 1fr 300px;
-  grid-template-areas: "encabezado" "logo" "principal" "pie"; }
-
-.descripcion {
-  font-family: Gentium Plus;
-  background-color: #dffcfc;
-  text-align: center;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 30px;
-  font-size: 20px; }
-
-header {
-  height: 150px;
-  grid-area: encabezado;
-  background-color: #dffcfc; }
-
-.logo {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  grid-area: logo;
-  /* background-color: rgb(248, 228, 231); */ }
-
-main {
-  background-color: #dffcfc;
-  font-family: 'Comfortaa', cursive;
-  font-family: 'Cormorant Garamond', serif;
-  font-family: 'Gentium Plus', serif;
-  grid-area: principal; }
-
 /* footer*/
 footer {
   grid-area: pie;
-  background-color: #dddddd;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 70%; }
+  background-color: #dddddd; }
 
 .btnFooter {
   background-color: palevioletred;
   border: solid 1px #e2977e;
-  border-radius: 5px; }
-
-.contenedorSociales a {
-  font-size: 20px; }
+  border-radius: 5px;
+  width: 100%; }
 
 .redes {
   text-align: center; }
@@ -116,9 +105,11 @@ footer {
   margin-left: 20px;
   font-size: 20px;
   color: #e4556d; }
+  .contenedorSociales a {
+    font-size: 20px; }
 
 .bandera {
-  text-align: start; }
+  text-align: center; }
 
 .chef {
   margin-left: 20px; }
@@ -128,15 +119,6 @@ footer {
 
 .company {
   color: #e4556d; }
-
-.descripcion {
-  font-family: Gentium Plus;
-  background-color: #dffcfc;
-  text-align: center;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 30px;
-  font-size: 20px; }
 
 .grilla {
   background-color: #b8eedc; }
@@ -152,7 +134,6 @@ footer {
   margin: auto;
   border: solid 3px #e2977e;
   border-radius: 5px;
-  /* align-content: center; */
   display: block; }
 
 .foto {
@@ -183,15 +164,6 @@ footer {
   border: solid 4px #c593c5; }
   .imagenResaltada_cocinera:hover {
     transform: scale(2); }
-
-.descripcion {
-  font-family: Gentium Plus;
-  background-color: #dffcfc;
-  text-align: center;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 30px;
-  font-size: 20px; }
 
 .formato {
   padding: 15px;
@@ -224,51 +196,10 @@ input {
 .concepcion {
   font-size: 20px; }
 
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 85px; }
-  .descripcion {
-    font-size: 40px; }
-  body {
-    background-image: none;
-    background-color: #fce1e9; }
-  h3 {
-    font-size: 10vw;
-    margin-top: 20px; }
-  h4 {
-    font-size: 35px; }
-  footer {
-    width: 100%;
-    height: 100%; } }
-
-@media screen and (max-width: 490px) {
-  h1 {
-    font-size: 90px; }
-  .descripcion {
-    font-size: 50px;
-    text-align: justify; }
-  body {
-    background-image: none;
-    background-color: #fce1e9;
-    grid-template-rows: 300px 200px 1fr 700px; }
-  h2 {
-    font-size: 65px; }
-  h3 {
-    font-size: 20vw;
-    margin-top: 20px; }
-  h4 {
-    font-size: 10vw; }
-  h5 {
-    font-size: 9vw; }
-  .concepcion {
-    font-size: 50px; }
-  footer {
-    width: 100%;
-    height: 90%; }
-  .chef a {
-    font-size: 30px; }
-  .suscripcion {
-    font-size: 40px; }
-  /* receta */
-  .ingrediente {
-    font-size: 40px; } }
+@media screen and (max-width: 530px) {
+  header h1 {
+    display: none; }
+  .nav-link {
+    font-size: 20px; }
+  .navbar-brand {
+    display: block; } }
