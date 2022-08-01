@@ -46,16 +46,16 @@
               <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Recetas.html">Recetas</a>
+              <a class="nav-link" href="./recetas.html">Recetas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./Maquinas.html">Maquinas</a>
+              <a class="nav-link" href="./maquinas.html">Maquinas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./Quien-Soy.html">Quien soy</a>
+              <a class="nav-link" href="./quien-soy.html">Quien soy</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./paginas/Contacto.html">Contacto</a>
+              <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -63,21 +63,21 @@
     </nav>
   </div>
 
-
   <div class="logo">
-    <a href="../index.html"> <img src="../imagenes/verduras.jpg" alt="Logo de mi pagina"></a>
+    <a href="./index.html"> <img src="../imagenes/verduras.jpg" alt="Logo de mi pagina"></a>
   </div>
+
 
   <main>
 
     <h2>Contacto</h2>
-    <div class="formato">
+    <div class="container-fluid formato">
       <form class="row g-3 fomulario">
-        <div class="col-md-6">
+        <div class="col-md-6 col-xs-12">
           <label for="inputNombre4" class="form-label">Nombre Completo</label>
           <input type="text" class="form-control" id="inputNombre4">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-xs-12">
           <label for="inputEmail4" class="form-label">Email</label>
           <input type="Email" class="form-control" id="inputEmail4">
         </div>
@@ -87,7 +87,7 @@
           <textarea class="form-control" id="inputComentario"></textarea>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 col-xs-12">
           <label for="inputGenero" class="form-label">Genero</label>
           <select id="inputGenero" class="form-select">
             <option selected>Elige</option>
@@ -97,8 +97,8 @@
           </select>
         </div>
 
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Enviar</button>
+        <div class="col-xs-12">
+          <button type="button" class="btn btn-primary">Enviar</button>
         </div>
       </form>
     </div>
@@ -106,10 +106,10 @@
     <div>
       <h2> Mi zona</h2>
 
-      <div class="container zonaConcepcion ">
+      <div class="container concepcion ">
 
         <div class="row">
-          <p class="concepcion col-sm-12 col-lg-9"> Concepción es una comuna y ciudad chilena perteneciente al área
+          <p class=" col-sm-12 col-lg-9"> Concepción es una comuna y ciudad chilena perteneciente al área
             metropolitana del Gran Concepción, y es la
             capital de la provincia homónima y la Región del Biobío. El núcleo urbano de Concepción ejerce un
             significativo impacto en el comercio nacional al ser parte de la región con más industrialización del país.
@@ -121,7 +121,7 @@
             universidades, entre las que destacan la Universidad de Concepción, la Universidad del Bío-Bío y la
             Universidad Católica de la Santísima Concepción. </p>
 
-          <iframe class="col-sm-12 col-lg-3"
+          <iframe class="col-sm-12 col-lg-3 mb-4"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102197.9814143502!2d-73.10308564552108!3d-36.82602156063336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b5cdd2bbc63b%3A0x44cb37b752212698!2zQ29uY2VwY2nDs24sIELDrW8gQsOtbw!5e0!3m2!1ses!2scl!4v1654912658528!5m2!1ses!2scl"
             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -129,7 +129,7 @@
     </div>
   </main>
 
-<footer>
+  <footer>
     <div class="container-fluid footer">
 
       <div class="row p-2">
@@ -145,9 +145,9 @@
           </div>
         </div>
 
-        <div class="redes col-lg-2 col-md-2 col-sm-2 col-xs-1">
+        <div class="redes col-lg-2 col-md-2 col-sm-2 col-xs-1 mt-4">
           <div class="bandera">
-            <img src="../imagenes/bandera.jpg" alt="bandera chile">
+            <img width="90px" height="90px" src="../imagenes/bandera.jpg" alt="bandera chile">
           </div>
         </div>
 
@@ -184,6 +184,7 @@
     </div>
 
   </footer>
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"

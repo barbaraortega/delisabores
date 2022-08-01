@@ -7,16 +7,17 @@
     font-size: 20px;
 }
 .calzon{
-    width: 40%;
-    height: 300px;
+    max-width: 70%;
+    height: 250px;
     margin: auto;
+    margin-bottom: 10px;
     border: solid 3px rgb(226, 151, 126);
     border-radius: 5px;
     display: block;
 
 }
 .foto {
-    width: 40%;
+    max-width: 50%;
     height: 300px;
     margin: 15px auto;
     border: solid 3px rgb(226, 151, 126);

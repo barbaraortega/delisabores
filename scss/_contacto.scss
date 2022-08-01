@@ -1,22 +1,13 @@
 .formato {
     padding: 15px;
-    width: 70%;
+    max-width: 70%;
     color: black;
     font-weight: bold;
     background: #a8d3d4;
     font-size: 1.2rem;
     border-radius: 5px;
-    margin-left: 200px;
 }
-.textoFormulario {
-    font-size: 20px;
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    height: 20px;
-    border: none;
-    text-align: center;
-}
+
 input {
     height: 40px;
     size: 50px;
@@ -24,8 +15,8 @@ input {
 }
 .btn {
     background-color:$bgcolorBoton;
-    margin-left: 430px;
 }
 .concepcion {
     font-size: 20px;
+    text-align: justify;
 }

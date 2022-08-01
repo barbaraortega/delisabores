@@ -54,8 +54,9 @@ header h1 {
   justify-content: center;
   align-content: center;
   background-color: #fce1e9; }
-  .logo a img {
-    max-width: 100%; }
+
+.logo a img {
+  max-width: 100%; }
 
 main {
   grid-area: principal;
@@ -77,14 +78,14 @@ h2 {
   margin: auto;
   padding: auto;
   width: fit-content;
-  font-size: 45px;
+  font-size: 35px;
   color: #e27092; }
 
 h3 {
   margin: auto;
   padding: auto;
   width: fit-content;
-  font-size: 40px;
+  font-size: 30px;
   color: #e2977e; }
 
 /* footer*/
@@ -129,15 +130,16 @@ footer {
   font-size: 20px; }
 
 .calzon {
-  width: 40%;
-  height: 300px;
+  max-width: 70%;
+  height: 250px;
   margin: auto;
+  margin-bottom: 10px;
   border: solid 3px #e2977e;
   border-radius: 5px;
   display: block; }
 
 .foto {
-  width: 40%;
+  max-width: 50%;
   height: 300px;
   margin: 15px auto;
   border: solid 3px #e2977e;
@@ -159,30 +161,22 @@ footer {
     background-image: url(../imagenes/pan4.jpg); } }
 
 .imagenResaltada_cocinera {
+  display: block;
   margin: auto;
-  margin-left: 520px;
+  /* 
+    margin-left: 520px ; */
   border: solid 4px #c593c5; }
   .imagenResaltada_cocinera:hover {
     transform: scale(2); }
 
 .formato {
   padding: 15px;
-  width: 70%;
+  max-width: 70%;
   color: black;
   font-weight: bold;
   background: #a8d3d4;
   font-size: 1.2rem;
-  border-radius: 5px;
-  margin-left: 200px; }
-
-.textoFormulario {
-  font-size: 20px;
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 7px;
-  height: 20px;
-  border: none;
-  text-align: center; }
+  border-radius: 5px; }
 
 input {
   height: 40px;
@@ -190,11 +184,11 @@ input {
   text-align: center; }
 
 .btn {
-  background-color: palevioletred;
-  margin-left: 430px; }
+  background-color: palevioletred; }
 
 .concepcion {
-  font-size: 20px; }
+  font-size: 20px;
+  text-align: justify; }
 
 @media screen and (max-width: 530px) {
   header h1 {
@@ -202,4 +196,10 @@ input {
   .nav-link {
     font-size: 20px; }
   .navbar-brand {
-    display: block; } }
+    display: block; }
+  .calzon {
+    max-width: 70%;
+    height: 150px; }
+  .foto {
+    max-width: 80%;
+    height: 150px; } }
