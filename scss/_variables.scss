@@ -3,11 +3,12 @@ $border: solid 1px rgb(226, 151, 126);
 $colores:( 
 "color-menu": rgb(226, 151, 126),
 "color-footer": rgb(228, 85, 109),
-"color-titulo":rgb(255, 42, 148)
+"color-titulo":rgb(255, 146, 146)
 );
 
 $bgcolorBoton:palevioletred;
-$bgcolorprincipal:rgb(223, 252, 252);
+$bgcolorprincipal:white;
+$bgcolorformulario:rgb(255, 249, 182);
 
 
 @mixin titulos($fsize,$textcolor){

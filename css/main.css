@@ -6,14 +6,14 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "encabezado" "navegacion" "logo" "principal" "pie";
-  background-color: #fce1e9; }
+  background-color: white; }
 
 header {
   grid-area: encabezado;
-  background-color: #dffcfc; }
+  background-color: white; }
 
 header h1 {
-  color: #ff2a94;
+  color: #ff9292;
   margin: auto;
   width: fit-content;
   font-family: 'Comfortaa', cursive;
@@ -25,12 +25,15 @@ header h1 {
 
 .navegacion {
   grid-area: navegacion;
-  background-color: #dffcfc; }
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .navegacion nav {
-    background-color: #dffcfc; }
+    background-color: white; }
 
 .navbar-brand {
-  color: #ff2a94;
+  color: #ff9292;
   font-family: "Comfortaa", cursive;
   font-family: "Cormorant Garamond", serif;
   font-family: "Gentium Plus", serif;
@@ -43,31 +46,40 @@ header h1 {
   color: #e2977e;
   font-size: 30px;
   margin: 10px; }
+  .nav-link:hover {
+    color: #e4556d;
+    transition: color;
+    font-weight: bold; }
 
 .navbar-nav .nav-link.active,
 .navbar-nav .show > .nav-link {
   color: #e2977e; }
+  .navbar-nav .nav-link.active:hover,
+  .navbar-nav .show > .nav-link:hover {
+    color: #e4556d;
+    transition: color;
+    font-weight: bold; }
 
 .logo {
   grid-area: logo;
   display: flex;
   justify-content: center;
   align-content: center;
-  background-color: #fce1e9; }
+  background-color: white; }
 
 .logo a img {
   max-width: 100%; }
 
 main {
   grid-area: principal;
-  background-color: #dffcfc;
+  background-color: white;
   font-family: 'Comfortaa', cursive;
   font-family: 'Cormorant Garamond', serif;
   font-family: 'Gentium Plus', serif; }
 
 .descripcion {
   font-family: Gentium Plus;
-  background-color: #dffcfc;
+  background-color: white;
   text-align: justify;
   margin-right: 20px;
   margin-left: 20px;
@@ -79,25 +91,31 @@ h2 {
   padding: auto;
   width: fit-content;
   font-size: 35px;
-  color: #e27092; }
+  color: #ff9292;
+  margin-bottom: 10px;
+  margin-top: 15px; }
 
 h3 {
   margin: auto;
   padding: auto;
   width: fit-content;
   font-size: 30px;
-  color: #e2977e; }
+  color: #ff9292;
+  margin-bottom: 20px;
+  font-weight: bolder; }
 
 /* footer*/
 footer {
   grid-area: pie;
-  background-color: #dddddd; }
+  /*   background-color: rgb(221, 221, 221); */
+  background-color: #FFE699; }
 
 .btnFooter {
   background-color: palevioletred;
   border: solid 1px #e2977e;
   border-radius: 5px;
-  width: 100%; }
+  width: 100%;
+  color: white; }
 
 .redes {
   text-align: center; }
@@ -108,6 +126,15 @@ footer {
   color: #e4556d; }
   .contenedorSociales a {
     font-size: 20px; }
+
+.suscripcion {
+  color: #e4556d; }
+
+h5 {
+  color: #e4556d; }
+
+.tituloChef {
+  color: #e4556d; }
 
 .bandera {
   text-align: center; }
@@ -122,7 +149,7 @@ footer {
   color: #e4556d; }
 
 .grilla {
-  background-color: #b8eedc; }
+  background-color: #fff9b6; }
 
 .ingrediente {
   border: solid 1px #e2977e;
@@ -133,7 +160,7 @@ footer {
   max-width: 70%;
   height: 250px;
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   border: solid 3px #e2977e;
   border-radius: 5px;
   display: block; }
@@ -163,20 +190,30 @@ footer {
 .imagenResaltada_cocinera {
   display: block;
   margin: auto;
-  /* 
-    margin-left: 520px ; */
-  border: solid 4px #c593c5; }
+  border: solid 1px #e2977e;
+  border-radius: 5px; }
   .imagenResaltada_cocinera:hover {
     transform: scale(2); }
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  max-width: 100%; }
+
+.videoMaquina {
+  border: solid 1px #e2977e;
+  border-radius: 5px; }
 
 .formato {
   padding: 15px;
   max-width: 70%;
   color: black;
   font-weight: bold;
-  background: #a8d3d4;
+  background: #fff9b6;
   font-size: 1.2rem;
-  border-radius: 5px; }
+  border-radius: 5px;
+  border: solid 1px #e2977e; }
 
 input {
   height: 40px;
@@ -184,7 +221,11 @@ input {
   text-align: center; }
 
 .btn {
-  background-color: palevioletred; }
+  background-color: palevioletred;
+  margin: 0 auto;
+  display: block;
+  color: black;
+  border: solid 1px #e2977e; }
 
 .concepcion {
   font-size: 20px;
@@ -193,13 +234,29 @@ input {
 @media screen and (max-width: 530px) {
   header h1 {
     display: none; }
+  .navbar-expand-lg {
+    width: 100%; }
   .nav-link {
     font-size: 20px; }
   .navbar-brand {
     display: block; }
+  /* receta */
   .calzon {
     max-width: 70%;
     height: 150px; }
+  /* maquinas */
+  .video {
+    overflow: hidden;
+    padding-bottom: 150px;
+    position: relative;
+    height: 0; }
+  .videoMaquina {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+  /* quien soy */
   .foto {
     max-width: 80%;
     height: 150px; } }

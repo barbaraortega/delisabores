@@ -1,11 +1,12 @@
 .formato {
     padding: 15px;
     max-width: 70%;
-    color: black;
+    color:black;
     font-weight: bold;
-    background: #a8d3d4;
+    background:$bgcolorformulario;
     font-size: 1.2rem;
     border-radius: 5px;
+    border: $border;
 }
 
 input {
@@ -15,6 +16,10 @@ input {
 }
 .btn {
     background-color:$bgcolorBoton;
+    margin: 0 auto;
+    display: block;
+    color: black;
+    border: $border;
 }
 .concepcion {
     font-size: 20px;

@@ -12,7 +12,7 @@ body {
         "logo"
         "principal"
         "pie";
-    background-color: rgb(252, 225, 233);
+    background-color: $bgcolorprincipal;
 }
 
 header{
@@ -21,7 +21,7 @@ header{
   }
 
 header h1 {
-    color: map-get($colores, "color-titulo");
+    color:map-get($colores, "color-titulo") ;
     margin: auto;
     width: fit-content;
     font-family: 'Comfortaa', cursive;
@@ -35,6 +35,9 @@ header h1 {
 .navegacion {
     grid-area: navegacion;
     background-color: $bgcolorprincipal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
  & nav {
     background-color:$bgcolorprincipal
@@ -51,15 +54,27 @@ header h1 {
     display: none;
   }
 
-.nav-link{
+.nav-link {
     color:map-get($colores,"color-menu");
     font-size: 30px;
     margin: 10px;
+
+    &:hover {
+        color:map-get($colores,"color-footer"); 
+        transition: color;  
+        font-weight: bold;  
+    }
 }
 
 .navbar-nav .nav-link.active,
 .navbar-nav .show>.nav-link {
     color:map-get($colores,"color-menu");
+
+    &:hover {
+        color:map-get($colores,"color-footer"); 
+        transition: color;    
+        font-weight: bold; 
+    }
 }
 
 .logo {
@@ -67,7 +82,7 @@ header h1 {
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: rgb(252, 225, 233);   
+    background-color: $bgcolorprincipal;;   
 }
 .logo a img {
     max-width: 100%;
@@ -92,17 +107,23 @@ main {
 }
 
 h2 {
-    @include titulos(35px,rgb(226, 112, 146));
+    @include titulos(35px,rgb(255, 146, 146));
+    margin-bottom: 10px;
+    margin-top: 15px;
+
 }
 
 h3 {
-   @include titulos(30px,rgb(226, 151, 126));
+   @include titulos(30px,rgb(255, 146, 146));
+   margin-bottom: 20px;
+   font-weight: bolder;
 }
 
 /* footer*/
 footer {
     grid-area: pie;
-    background-color: rgb(221, 221, 221);
+  /*   background-color: rgb(221, 221, 221); */
+  background-color:#FFE699 ;
 }
 
 .btnFooter {
@@ -110,6 +131,7 @@ footer {
     border: $border;
     border-radius: 5px;
     width: 100%;
+    color: white;
 }
 
 .redes {
@@ -123,6 +145,16 @@ footer {
     & a {
     font-size: 20px;
 }
+}
+.suscripcion{
+    color:map-get($colores,"color-footer");
+}
+
+h5{
+    color:map-get($colores,"color-footer");
+}
+.tituloChef{
+    color:map-get($colores,"color-footer");
 }
 
 .bandera {

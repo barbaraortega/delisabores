@@ -1,8 +1,8 @@
 .imagenResaltada_cocinera {
     display: block;
-    margin: auto;/* 
-    margin-left: 520px ; */
-    border:solid 4px rgb(197, 147, 197);
+    margin: auto;
+    border:$border;
+    border-radius: 5px;
     
     &:hover {
     transform: scale(2);

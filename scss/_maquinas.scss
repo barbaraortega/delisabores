@@ -1,0 +1,11 @@
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    max-width: 100%;
+}
+.videoMaquina{
+    border: $border;
+    border-radius: 5px;
+}
