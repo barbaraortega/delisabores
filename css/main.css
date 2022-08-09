@@ -107,7 +107,6 @@ h3 {
 /* footer*/
 footer {
   grid-area: pie;
-  /*   background-color: rgb(221, 221, 221); */
   background-color: #FFE699; }
 
 .btnFooter {
